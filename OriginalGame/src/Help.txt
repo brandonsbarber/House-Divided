@@ -1,0 +1,24 @@
+A House Divided is strictly a multiplayer game with no single player
+elements included. In order to play, one person must start a new
+game. This consists of picking a side and a map to be used. When
+a message pops up telling you your IP address, tell that to your
+partner and have them type that in under Join Game. 
+
+Once you are in the map screen, you will see many things. Your
+menu bar is on the right. At the top is a miniature map of the
+battlefield. Below is basic information on your army. At the bottom is your building panel.
+
+CP- Command Points, reach this limit and you cannot build more 
+troops. Some buildings are only designed to augment CP and do 
+nothing else. Some are required for training units. It is heavily 
+recommended that you build coal mines to generate income first.
+
+In order to place a building, you must go to within your building
+zone. You start there at the beginning on the grid of
+corresponding color to your side. Left click to confirm building, right 
+click to cancel. Once you have trained a unit, select
+him with left mouse and appoint a move location with right
+clicks.
+
+Your objective is to destroy all enemy units and buildings.
+Best of luck to you, general!

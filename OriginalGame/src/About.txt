@@ -1,0 +1,8 @@
+Name: A House Divided
+Author: Brandon Barber
+Version: Alpha
+This game takes place in the Civil War. You are a commander in the army and are tasked with crushing your opponents. Take your side 
+and fight well.
+But be wary, things may not be as they seem. Communications are slow on the battlefield and may contain false reports.
+Fight well, commander!
+And may the lag be ever in your favor.
