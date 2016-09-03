@@ -97,16 +97,16 @@ public class GameFrame extends JFrame implements ActionListener, MouseListener, 
         
         try
         {
-            Image normal = ImageIO.read(getClass().getResource("/normalCursor.png"));
+            Image normal = ImageIO.read(getClass().getResource("/images/normalCursor.png"));
             int xPoint = normal.getHeight(this)/2;
             int yPoint = normal.getHeight(this)/2;
             Point p = new Point(xPoint, yPoint);
             
             normalCursor = Toolkit.getDefaultToolkit().createCustomCursor(normal, p, null);
-            Image attack = ImageIO.read(getClass().getResource("/attackCursor.png"));
+            Image attack = ImageIO.read(getClass().getResource("/images/attackCursor.png"));
             attackCursor = Toolkit.getDefaultToolkit().createCustomCursor(attack, p, null);
             
-            Image good = ImageIO.read(getClass().getResource("/unitCursor.png"));
+            Image good = ImageIO.read(getClass().getResource("/images/unitCursor.png"));
             unitCursor = Toolkit.getDefaultToolkit().createCustomCursor(good,p,null);
             setCursor(normalCursor);
         }

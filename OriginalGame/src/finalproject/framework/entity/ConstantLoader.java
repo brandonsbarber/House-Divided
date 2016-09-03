@@ -41,7 +41,7 @@ public class ConstantLoader
         
         InputStream file = null;
             JOptionPane.showMessageDialog(null,"Executing?");
-            file = loader.getClass().getResourceAsStream("/EntityConstants.xml");
+            file = loader.getClass().getResourceAsStream("/config/EntityConstants.xml");
             JOptionPane.showMessageDialog(null,"Executing2?");
         
         Document doc = DocumentBuilderFactory.newInstance().newDocumentBuilder().parse(file);

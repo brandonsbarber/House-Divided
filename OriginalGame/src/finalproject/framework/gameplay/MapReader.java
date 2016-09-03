@@ -30,7 +30,7 @@ public class MapReader
         {
             MapReader run = new MapReader();
             System.out.println(s.toString());
-            Scanner mapReader = new Scanner(run.getClass().getResourceAsStream("/"+s.toString()+".jwmap"));
+            Scanner mapReader = new Scanner(run.getClass().getResourceAsStream("/maps/"+s.toString()+".jwmap"));
             ArrayList<String[]> numberLines = new ArrayList<String[]>();
             int dim = mapReader.nextInt();
             mapReader.nextLine();

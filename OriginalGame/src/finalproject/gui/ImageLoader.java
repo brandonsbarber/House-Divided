@@ -28,7 +28,7 @@ public class ImageLoader
     {
         try
         {
-            return ImageIO.read(getClass().getResource("/"+imageName));
+            return ImageIO.read(getClass().getResource("/images/"+imageName));
         }
         catch(Exception e)
         {

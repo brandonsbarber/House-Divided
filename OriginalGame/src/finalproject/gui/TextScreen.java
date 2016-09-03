@@ -38,7 +38,7 @@ public class TextScreen extends JFrame
         s = "";
         try
         {
-            in = new Scanner(getClass().getResourceAsStream("/"+fileName));
+            in = new Scanner(getClass().getResourceAsStream("/config/"+fileName));
         }
         catch(Exception e)
         {

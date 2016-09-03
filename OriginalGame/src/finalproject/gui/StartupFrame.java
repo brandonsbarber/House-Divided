@@ -43,21 +43,21 @@ public class StartupFrame extends JFrame implements MouseListener
         setUndecorated(true);
         setDefaultCloseOperation(JFrame.EXIT_ON_CLOSE);
         
-        Image title = ImageIO.read(getClass().getResource("/houseText.png"));
+        Image title = ImageIO.read(getClass().getResource("/images/houseText.png"));
         JLabel label = new JLabel(new ImageIcon(title));
         label.setBounds((int)(screen.getWidth()/2-title.getWidth(this)/2),15,title.getWidth(this), title.getHeight(this));
         
         
-        Image gameSplash = ImageIO.read(getClass().getResource("/gameSplash.jpg"));
+        Image gameSplash = ImageIO.read(getClass().getResource("/images/gameSplash.jpg"));
         JLabel imageLabel = new JLabel(new ImageIcon(gameSplash));
         imageLabel.setBounds((int)(screen.getWidth()/2-gameSplash.getWidth(this)/2),(int)(screen.getHeight()/2-gameSplash.getHeight(this)/2),gameSplash.getWidth(this), gameSplash.getHeight(this));
         
-        Image woodenBack = ImageIO.read(getClass().getResource("/woodBack.jpg"));
+        Image woodenBack = ImageIO.read(getClass().getResource("/images/woodBack.jpg"));
         JLabel woodLabel = new JLabel(new ImageIcon(woodenBack));
         woodLabel.setBounds(0,0,woodenBack.getWidth(this),woodenBack.getHeight(this));
         
-        Image on = ImageIO.read(getClass().getResource("/LabelOn.gif"));
-        Image off = ImageIO.read(getClass().getResource("/LabelOff.gif"));
+        Image on = ImageIO.read(getClass().getResource("/images/LabelOn.gif"));
+        Image off = ImageIO.read(getClass().getResource("/images/LabelOff.gif"));
         
         int midScreen = (int)(screen.getHeight()/2);
         
