@@ -42,7 +42,11 @@ import javax.swing.JTabbedPane;
 
 public class GameFrame extends JFrame implements ActionListener, MouseListener, MouseMotionListener, WindowListener
 {
-    private Player player;
+    /**
+	 * 
+	 */
+	private static final long serialVersionUID = -6414567550566170416L;
+	private Player player;
     private Dimension dim;
     public final String[] UNION_UNITS = {"Army of the Potomac","20th Maine","Light Cavalry","Heavy Cavalry","Light Artillery","Heavy Artillery"};
     public final String[] BUILDINGS = {"Coal Mine", "Conscription Center","Tent","Mess Tent","Blacksmith","Artillery Range","Stables"};
@@ -257,9 +261,7 @@ public class GameFrame extends JFrame implements ActionListener, MouseListener, 
         if(e.getSource() instanceof JButton)
         {
             JButton button = (JButton)e.getSource();
-            
-            String command = "";
-            
+                        
             for(int index = 0; index < units.length; index++)
             {
                 if(button.getText().equals(units[index]))

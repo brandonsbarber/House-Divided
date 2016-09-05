@@ -18,7 +18,8 @@ import javax.swing.JComponent;
 
 public class MiniMap extends JComponent
 {
-    private Game game;
+	private static final long serialVersionUID = -640381280558913585L;
+	private Game game;
     private Map map;
     private MapLocation mapLoc;
     private Image[] images = new Image[Map.NUM_TILE_TYPES];

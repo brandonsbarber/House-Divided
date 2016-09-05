@@ -10,14 +10,14 @@ package finalproject.gui;
 
 import finalproject.framework.gameplay.Game;
 import java.awt.GridLayout;
-import javax.swing.JComponent;
 import javax.swing.JLabel;
 import javax.swing.JPanel;
 import javax.swing.JTextField;
 
 public class InfoPanel extends JPanel
 {
-    private Game game;
+	private static final long serialVersionUID = -122028710242670890L;
+	private Game game;
     private JTextField money, troops,training,comP,maxP;
     
     /**

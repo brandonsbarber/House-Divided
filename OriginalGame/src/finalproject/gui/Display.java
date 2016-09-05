@@ -23,7 +23,11 @@ import javax.swing.JComponent;
 
 public class Display extends JComponent
 {
-    private Game game;
+    /**
+	 * 
+	 */
+	private static final long serialVersionUID = -233092302702704454L;
+	private Game game;
     private MapLocation loc;
     private Map map;
     

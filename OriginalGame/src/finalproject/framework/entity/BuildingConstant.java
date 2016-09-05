@@ -10,7 +10,6 @@ package finalproject.framework.entity;
 
 public class BuildingConstant extends Constant
 {
-    private String name;
     private int spawnX, spawnY,cp;
     
     /**

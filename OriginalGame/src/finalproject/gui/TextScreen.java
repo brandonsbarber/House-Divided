@@ -20,8 +20,8 @@ import javax.swing.JTextArea;
  */
 public class TextScreen extends JFrame
 {
-    
-    private JTextArea text;
+	private static final long serialVersionUID = -1616997354818598833L;
+	private JTextArea text;
     private String s;
     
     /**Constructs a TextScreen with text from the given file.

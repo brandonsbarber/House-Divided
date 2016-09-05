@@ -14,7 +14,6 @@ public class FrameThreader implements Runnable
 {
     private GameFrame game;
     public static final int FRAME_RATE = 18;
-    private boolean running = true;
     /**
      * Constructs a thread runnable for continuous repainting
      * @param game gameframe to be painted

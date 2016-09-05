@@ -8,7 +8,7 @@
 
 package finalproject.framework.entity;
 
-public class Building extends Entity implements Comparable
+public class Building extends Entity implements Comparable<Building>
 {
     private int spawnX, spawnY, count,cp;
     
@@ -83,7 +83,7 @@ public class Building extends Entity implements Comparable
      * @return comparison
      */
     @Override
-    public int compareTo(Object t)
+    public int compareTo(Building t)
     {
         if(t == this)
             return 0;

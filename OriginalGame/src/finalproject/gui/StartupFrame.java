@@ -31,8 +31,9 @@ import javax.swing.JOptionPane;
 
 public class StartupFrame extends JFrame implements MouseListener
 {
-    
-    /**
+	private static final long serialVersionUID = 190466149892648099L;
+
+	/**
      * Constructs a new StartupFrame
      * @throws Exception 
      */
@@ -138,6 +139,7 @@ public class StartupFrame extends JFrame implements MouseListener
                     frame.setVisible(true);
                     t.start();
                     dispose();
+                    in.close();
                 }
                 catch(Exception e)
                 {

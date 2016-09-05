@@ -38,27 +38,21 @@ import javax.swing.JOptionPane;
 import javax.swing.JPanel;
 import javax.swing.JTextArea;
 import java.util.LinkedList;
-import java.util.concurrent.locks.Condition;
-import java.util.concurrent.locks.Lock;
-import java.util.concurrent.locks.ReentrantLock;
 import javax.swing.JScrollPane;
 
 public class GameServer implements ActionListener, WindowListener
 {
-    private JComboBox dropDown;
+    private JComboBox<String> dropDown;
     private JButton confirm;
     private JFrame startFrame, waitingFrame;
     
     private ServerSocket server;
     private ArrayList<TransmitRunnable> runnables;
     private Socket lastRetrieved = null;
-    private String command = "";
     private LinkedList<String> commands;
     private String text;
     private JTextArea textArea;
     private JScrollPane pane;
-    private Lock lock = new ReentrantLock();
-    private Condition cond = lock.newCondition();
     private MapName map;
     private StartupFrame start;
     
@@ -76,7 +70,7 @@ public class GameServer implements ActionListener, WindowListener
         startFrame = new JFrame();
         startFrame.setLayout(new GridLayout(3,1,15,15));
         startFrame.add(new JLabel("Please select a faction to play as:"));
-        dropDown = new JComboBox();
+        dropDown = new JComboBox<String>();
         dropDown.addItem("UNION");
         dropDown.addItem("CONFEDERATE");
         startFrame.add(dropDown);

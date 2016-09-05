@@ -26,11 +26,12 @@ public class MapReader
     public static Map readMap(MapName s)
     {
         Map map = new Map(1);
+        Scanner mapReader = null;
         try
         {
             MapReader run = new MapReader();
             System.out.println(s.toString());
-            Scanner mapReader = new Scanner(run.getClass().getResourceAsStream("/maps/"+s.toString()+".jwmap"));
+            mapReader = new Scanner(run.getClass().getResourceAsStream("/maps/"+s.toString()+".jwmap"));
             ArrayList<String[]> numberLines = new ArrayList<String[]>();
             int dim = mapReader.nextInt();
             mapReader.nextLine();
@@ -64,6 +65,7 @@ public class MapReader
                 {
                     spawn1.get(x).add(in.nextInt());
                 }
+                in.close();
             }
             
             if(!line.equals(""))
@@ -76,6 +78,7 @@ public class MapReader
                 {
                     spawn2.get(x).add(in.nextInt());
                 }
+                in.close();
             }
             while(mapReader.hasNextLine() && (line = mapReader.nextLine()).contains("spawn2"))
             {
@@ -87,11 +90,19 @@ public class MapReader
                 {
                     spawn2.get(x).add(in.nextInt());
                 }
+                in.close();
             }
         }
         catch (Exception ex)
         {
             JOptionPane.showMessageDialog(null, "Corrupted file!");
+        }
+        finally
+        {
+        	if (mapReader != null)
+        	{
+        		mapReader.close();
+        	}
         }
         return map;
     }
@@ -104,10 +115,10 @@ public class MapReader
     public static Map readMap(File f)
     {
         Map map = new Map(1);
+        Scanner mapReader = null;
         try
         {
-            MapReader run = new MapReader();
-            Scanner mapReader = new Scanner(f);
+            mapReader = new Scanner(f);
             ArrayList<String[]> numberLines = new ArrayList<String[]>();
             int dim = mapReader.nextInt();
             mapReader.nextLine();
@@ -141,6 +152,7 @@ public class MapReader
                 {
                     spawn1.get(x).add(in.nextInt());
                 }
+                in.close();
             }
             
             if(!line.equals(""))
@@ -153,6 +165,7 @@ public class MapReader
                 {
                     spawn2.get(x).add(in.nextInt());
                 }
+                in.close();
             }
             while(mapReader.hasNextLine() && (line = mapReader.nextLine()).contains("spawn2"))
             {
@@ -164,11 +177,19 @@ public class MapReader
                 {
                     spawn2.get(x).add(in.nextInt());
                 }
+                in.close();
             }
         }
         catch (Exception ex)
         {
             JOptionPane.showMessageDialog(null, "Corrupted file!");
+        }
+        finally
+        {
+        	if (mapReader != null)
+        	{
+        		mapReader.close();
+        	}
         }
         return map;
     }

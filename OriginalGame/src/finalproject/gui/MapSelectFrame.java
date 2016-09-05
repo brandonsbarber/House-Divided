@@ -18,13 +18,10 @@ import javax.swing.JComboBox;
 import javax.swing.JFrame;
 import javax.swing.JPanel;
 
-/**
- *
- * @author Upstairs
- */
 class MapSelectFrame extends JFrame implements ActionListener
 {
-    private JComboBox maps;
+	private static final long serialVersionUID = 5568399079646239880L;
+	private JComboBox<MapName> maps;
     private StartupFrame start;
     
     /**
@@ -38,7 +35,7 @@ class MapSelectFrame extends JFrame implements ActionListener
         add(new JPanel(),BorderLayout.NORTH);
         add(new JPanel(),BorderLayout.EAST);
         add(new JPanel(),BorderLayout.WEST);
-        maps = new JComboBox(MapName.values());
+        maps = new JComboBox<MapName>(MapName.values());
         JButton but = new JButton("Continue...");
         but.addActionListener(this);
         add(but,BorderLayout.SOUTH);

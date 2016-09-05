@@ -13,7 +13,7 @@ import finalproject.gui.Display;
 import java.util.ArrayList;
 import java.util.TreeMap;
 
-public class Unit extends Entity implements Comparable
+public class Unit extends Entity implements Comparable<Unit>
 {
     public static int UnitCount = 1;
     
@@ -240,27 +240,6 @@ public class Unit extends Entity implements Comparable
     public int getCount()
     {
         return count;
-    }
-    
-    /**
-     * Compares two objects
-     * @param t the object to compare
-     * @return numeric comparison
-     */
-    @Override
-    public int compareTo(Object t)
-    {
-        if(!(t instanceof Unit))
-            return 0;
-        Unit u = (Unit)t;
-        if(getType() == u.getType())
-        {
-            return getCount()-u.getCount();
-        }
-        else
-        {
-            return getType().compareTo(u.getType());
-        }
     }
     
     /**

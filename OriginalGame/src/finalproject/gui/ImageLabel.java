@@ -15,7 +15,11 @@ import javax.swing.JLabel;
 
 public class ImageLabel extends JLabel
 {
-    private Image on,off;
+    /**
+	 * 
+	 */
+	private static final long serialVersionUID = -5909100941923928548L;
+	private Image on,off;
     private String t;
     
     private boolean act;
